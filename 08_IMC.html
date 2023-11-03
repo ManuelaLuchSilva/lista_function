@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     Problema: Cálculo do IMC
@@ -6,11 +7,15 @@
     */
 
     //Entrada
-
+    function imc(peso, altura) {
+        return("Seu IMC é de " + peso / (altura * altura));
+    }
 
     //Processamento
-
+    let peso = Number(prompt("Informe seu peso").replace(",","."));
+    let altura = Number(prompt("Informe seu altura").replace(",","."));
 
     //Saída
+    alert(imc(peso, altura));
 
 </script>

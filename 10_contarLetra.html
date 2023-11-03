@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     Problema: Contar Letra
@@ -6,11 +7,23 @@
     */
 
     //Entrada
-
+    function contaLetra(palavra, letra) {
+        let quantLetra = 0;
+        
+        for (let contador = 0; contador < palavra.length; contador++) {
+          if (letra.indexOf(palavra[contador]) !== -1) {
+            quantLetra++;
+          }
+        }
+        
+        return (`A palavra "${palavra}" tem ` + quantLetra + ` ${letra}(s)`);
+    }
 
     //Processamento
-
+    let palavra = prompt("Informe uma palavra")
+    let letra = prompt("Qual letra quer buscar?")
 
     //Saída
+    alert(contaLetra(palavra, letra))
 
 </script>

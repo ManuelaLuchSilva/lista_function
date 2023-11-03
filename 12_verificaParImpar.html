@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     Problema: Verificar número par ou ímpar
@@ -5,11 +6,19 @@
     */
 
     //Entrada
-
+    function ParImpar(num) {
+        if(num%2==0){
+         return(`${num} é par`)   
+        }
+        else{
+            return(`${num} é ímpar`)
+        }
+    }
 
     //Processamento
-
+    let num = parseInt(prompt("Informe um número"))
 
     //Saída
+    alert(ParImpar(num))
 
 </script>

@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     Problema: Área do Triângulo
@@ -6,11 +7,15 @@
     */
 
     //Entrada
-
+    function area(b, h) {
+        return ("A área é de " + (b * h) / 2);
+    }
 
     //Processamento
-
+    let b = prompt("Qual o valor da base?").replace(",", ".");
+    let h = prompt("Qual a altura?").replace(",", ".");
 
     //Saída
+    alert(area(b, h));
 
 </script>

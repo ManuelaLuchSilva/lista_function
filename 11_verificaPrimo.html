@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     Problema: Verificar número primo
@@ -5,11 +6,25 @@
     */
 
     //Entrada
+    function primo(num) {
+        let divisor = 0;
 
+        for (let contador = 1; contador <= num; contador++) {
+            if (num % contador == 0) {
+                divisor++;
+            }
+        }
+        if (divisor == 2) {
+            return (`${num} é um número primo`);
+        } else {
+            return (`${num} não é um número primo`)
+        }
+    }
 
     //Processamento
-
+    let num = parseInt(prompt("Informe o número que deseja saber se é primo"))
 
     //Saída
+    alert(primo(num))
 
 </script>

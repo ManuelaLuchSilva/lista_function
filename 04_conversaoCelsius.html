@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     Problema: Conversão para Celsius
@@ -6,11 +7,14 @@
     */
 
     //Entrada
-
+    function celsius(fahrenheit) {
+        return (`${fahrenheit}°F em celsius é: ` + (fahrenheit - 32) * 5 / 9 + "°C");
+    }
 
     //Processamento
-
+    let fahrenheit = prompt("Quantos graus fahrenheit está?").replace(",", ".");
 
     //Saída
+    alert(celsius(fahrenheit));
 
 </script>

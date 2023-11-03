@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     Problema: Calcular Fatorial
@@ -5,11 +6,24 @@
     */
 
     //Entrada
-
+    function fatorial(num) {
+        if (num < 0) {
+          return "Não é possível calcular o fatorial de um número negativo.";
+        } else if (num === 0 || num === 1) {
+          return (`${num}! = 1`);
+        } else {
+          let resultado = 1;
+          for (let i = 2; i <= num; i++) {
+            resultado *= i;
+          }
+          return (`${num}! = ` + resultado);
+        }
+      }
 
     //Processamento
-
+    let num = Number(prompt("Qual fatorial deseja descobrir?"));
 
     //Saída
+    alert(fatorial(num));
 
 </script>

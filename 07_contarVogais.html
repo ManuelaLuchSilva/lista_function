@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     Problema: Contar Vogais
@@ -7,11 +8,23 @@
     */
 
     //Entrada
-
+    function contarVogais(palavra) {
+        let vogais = ["a", "e", "i", "o", "u"];
+        let vogal = 0;
+        
+        for (let contador = 0; contador < palavra.length; contador++) {
+          if (vogais.indexOf(palavra[contador]) !== -1) {
+            vogal++;
+          }
+        }
+        
+        return (`A palavra "${palavra}" tem ` + vogal + " vogal(is)");
+      }
 
     //Processamento
-
+      let palavra = prompt("Informe uma palavra");
 
     //Saída
+    alert(contarVogais(palavra));
 
 </script>

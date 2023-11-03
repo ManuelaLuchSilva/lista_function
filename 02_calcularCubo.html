@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     Problema: Calcular Cubo de um Número
@@ -6,11 +7,14 @@
     */
 
     //Entrada
-
+    function numero(num) {
+        return (`${num}³ = ` + num * num * num);
+    }
 
     //Processamento
-
+    let num = parseInt(prompt("Informe um número inteiro:"));
 
     //Saída
+    alert(numero(num));
 
 </script>

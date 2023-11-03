@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     Problema: Conversão para Fahrenheit
@@ -6,11 +7,14 @@
     */
 
     //Entrada
-
+    function fahrenheit(celsius) {
+        return (`${celsius}°C em Fahrenheit é: ` + (9 * celsius + 160) / 5 + "°F");
+    }
 
     //Processamento
-
+    let celsius = prompt("Quantos graus Celsius está?").replace(",", ".");
 
     //Saída
+    alert(fahrenheit(celsius));
 
 </script>

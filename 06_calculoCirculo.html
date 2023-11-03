@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     Problema: Calcular área e perímetro de um círculo
@@ -8,11 +9,14 @@
     */
 
     //Entrada
-
+    function areaCirculo(r) {
+        return("A área do círculo é " + Math.PI * (r * r) +`\nE o perímetro do círculo é ` + 2 * Math.PI * r);
+    }
 
     //Processamento
-
+    let r = prompt("Qual o raio do círculo?").replace(",",".");
 
     //Saída
+    alert(areaCirculo(r));
 
 </script>
